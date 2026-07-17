@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="594mm" height="420mm" viewBox="0 0 5940 4200">
+  <defs>
+    <style><![CDATA[
+      text{font-family:"Microsoft YaHei","SimSun",sans-serif;fill:#111}
+      .thin{stroke:#111;stroke-width:5;fill:none}.med{stroke:#111;stroke-width:9;fill:none}.thick{stroke:#111;stroke-width:15;fill:none}
+      .wall{stroke:#111;stroke-width:18;fill:none}.partition{stroke:#111;stroke-width:10;stroke-dasharray:34 18;fill:none}
+      .road{stroke:#777;stroke-width:60;fill:none}.roadedge{stroke:#111;stroke-width:4;fill:none}
+      .dike{stroke:#9b1c1c;stroke-width:14;fill:#fff4f1}.isodike{stroke:#9b1c1c;stroke-width:8;stroke-dasharray:22 12}
+      .drain{stroke:#0086b3;stroke-width:7;fill:none}.fire{stroke:#1565c0;stroke-width:10;stroke-dasharray:28 14;fill:none}
+      .oil{stroke:#d97706;stroke-width:11;fill:none}.product{stroke:#7c3aed;stroke-width:11;fill:none}
+      .building{fill:#f7f7f7;stroke:#111;stroke-width:8}.hazard{fill:#fff0d5;stroke:#111;stroke-width:8}
+      .water{fill:#dff4ff;stroke:#1479a3;stroke-width:8}.green{fill:#e9f6e7;stroke:#4b7d46;stroke-width:5}
+      .zoneA{fill:#fffaf0}.zoneB{fill:#f3f8ff}.zoneC{fill:#fff7ef}.zoneD{fill:#f6fbf3}
+      .t18{font-size:18px}.t22{font-size:22px}.t26{font-size:26px}.t30{font-size:30px}.t34{font-size:34px}.t40{font-size:40px}.t48{font-size:48px}
+      .bold{font-weight:700}.center{text-anchor:middle;dominant-baseline:middle}.note{font-size:24px}.small{font-size:20px}
+      .dim{stroke:#111;stroke-width:4;fill:none;marker-start:url(#arr);marker-end:url(#arr)}
+    ]]></style>
+    <marker id="arr" markerWidth="10" markerHeight="10" refX="5" refY="5" orient="auto-start-reverse"><path d="M10,0 L0,5 L10,10 z" fill="#111"/></marker>
+    <marker id="flow" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto"><path d="M0,0 L9,4.5 L0,9 z" fill="context-stroke"/></marker>
+    <pattern id="hatch" width="20" height="20" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="20" stroke="#999" stroke-width="3"/></pattern>
+    <g id="tank">
+      <circle cx="0" cy="0" r="150" fill="#fff" stroke="#111" stroke-width="9"/>
+      <circle cx="0" cy="0" r="125" fill="none" stroke="#555" stroke-width="4"/>
+      <line x1="-105" y1="0" x2="105" y2="0" stroke="#555" stroke-width="4"/>
+      <line x1="0" y1="-105" x2="0" y2="105" stroke="#555" stroke-width="4"/>
+    </g>
+  </defs>
+
+  <rect x="70" y="70" width="5800" height="4060" class="thick"/>
+  <text x="170" y="170" class="t22">N</text>
+  <text x="2970" y="165" class="t48 bold center">广州黄埔穗东二级成品油库总平面分区布置图（方案）</text>
+  <text x="2970" y="220" class="t22 center">管道进油＋管道/公路发油　　图幅：A2横向　　比例：1∶1000</text>
+
+  <!-- plan coordinate grid and site boundary: 420m × 300m -->
+  <rect x="300" y="300" width="4200" height="3000" fill="#fff" stroke="#111" stroke-width="4"/>
+  <g stroke="#c8c8c8" stroke-width="2" stroke-dasharray="12 12">
+    <path d="M800 300V3300 M1300 300V3300 M1800 300V3300 M2300 300V3300 M2800 300V3300 M3300 300V3300 M3800 300V3300 M4300 300V3300"/>
+    <path d="M300 800H4500 M300 1300H4500 M300 1800H4500 M300 2300H4500 M300 2800H4500"/>
+  </g>
+  <g class="t18">
+    <text x="300" y="285">X=0</text><text x="780" y="285">50</text><text x="1265" y="285">100</text><text x="1765" y="285">150</text><text x="2265" y="285">200</text><text x="2765" y="285">250</text><text x="3265" y="285">300</text><text x="3765" y="285">350</text><text x="4265" y="285">400m</text>
+    <text x="235" y="315">Y=300</text><text x="248" y="810">250</text><text x="248" y="1310">200</text><text x="248" y="1810">150</text><text x="248" y="2310">100</text><text x="260" y="2810">50</text><text x="270" y="3290">0m</text>
+  </g>
+
+  <!-- functional zone backgrounds -->
+  <rect x="315" y="315" width="4170" height="1420" class="zoneA"/>
+  <rect x="315" y="1760" width="4170" height="570" class="zoneB"/>
+  <rect x="315" y="2350" width="2280" height="935" class="zoneC"/>
+  <rect x="2615" y="2350" width="1870" height="935" class="zoneD"/>
+  <path d="M300 1745H4500 M300 2340H4500 M2605 2340V3300" class="partition"/>
+  <rect x="315" y="315" width="4170" height="2970" class="wall"/>
+  <text x="450" y="390" class="t34 bold">Ⅰ 储油区（库区深处）</text>
+  <text x="450" y="1815" class="t34 bold">Ⅱ 辅助生产区</text>
+  <text x="450" y="2410" class="t34 bold">Ⅲ 公路装卸发油区</text>
+  <text x="2730" y="2410" class="t34 bold">Ⅳ 行政管理区</text>
+
+  <!-- storage ring fire road -->
+  <rect x="500" y="470" width="3800" height="1130" rx="120" class="road"/>
+  <rect x="470" y="440" width="3860" height="1190" rx="150" class="roadedge"/>
+  <rect x="530" y="500" width="3740" height="1070" rx="90" class="roadedge"/>
+  <text x="2400" y="520" class="t22 bold center">环形消防车道：总宽≥6m，路面≥4m，R≥12m，净空≥5m</text>
+  <path d="M490 1040H390" class="road"/><path d="M4310 1040H4410" class="road"/>
+  <text x="390" y="980" class="t18 center" transform="rotate(-90 390 980)">储罐区出入口1</text>
+  <text x="4410" y="980" class="t18 center" transform="rotate(90 4410 980)">储罐区出入口2</text>
+
+  <!-- gasoline tank group -->
+  <rect x="740" y="620" width="1740" height="850" class="dike"/>
+  <line x1="760" y1="1080" x2="2460" y2="1080" class="isodike"/>
+  <text x="1610" y="655" class="t24 bold center">汽油罐组防火堤（甲B类）</text>
+  <text x="1590" y="1050" class="t18 center">组内隔堤（92号/95号分隔）</text>
+  <g transform="translate(1020 850)"><use href="#tank"/><text y="-18" class="t22 bold center">T-101</text><text y="18" class="t18 center">92# 10000m³</text><text y="47" class="t16 center">内浮顶</text></g>
+  <g transform="translate(1440 850)"><use href="#tank"/><text y="-18" class="t22 bold center">T-102</text><text y="18" class="t18 center">92# 10000m³</text><text y="47" class="t16 center">内浮顶</text></g>
+  <g transform="translate(1860 850)"><use href="#tank"/><text y="-18" class="t22 bold center">T-103</text><text y="18" class="t18 center">92# 10000m³</text><text y="47" class="t16 center">内浮顶</text></g>
+  <g transform="translate(1230 1290)"><use href="#tank"/><text y="-18" class="t22 bold center">T-201</text><text y="18" class="t18 center">95# 10000m³</text><text y="47" class="t16 center">内浮顶</text></g>
+  <g transform="translate(1650 1290)"><use href="#tank"/><text y="-18" class="t22 bold center">T-202</text><text y="18" class="t18 center">95# 10000m³</text><text y="47" class="t16 center">内浮顶</text></g>
+  <!-- tank spacing dimension -->
+  <path d="M1170 570V600 M1290 570V600 M1170 580H1290" class="dim"/>
+  <text x="1230" y="560" class="t18 center">12m=0.4D</text>
+
+  <!-- diesel tank group -->
+  <rect x="2830" y="780" width="1390" height="610" class="dike"/>
+  <text x="3525" y="815" class="t24 bold center">0号柴油罐组防火堤（丙A类）</text>
+  <g transform="translate(3100 1090)"><use href="#tank"/><text y="-18" class="t22 bold center">T-301</text><text y="18" class="t18 center">0# 10000m³</text><text y="47" class="t16 center">固定顶</text></g>
+  <g transform="translate(3520 1090)"><use href="#tank"/><text y="-18" class="t22 bold center">T-302</text><text y="18" class="t18 center">0# 10000m³</text><text y="47" class="t16 center">固定顶</text></g>
+  <g transform="translate(3940 1090)"><use href="#tank"/><text y="-18" class="t22 bold center">T-303</text><text y="18" class="t18 center">0# 10000m³</text><text y="47" class="t16 center">固定顶</text></g>
+  <path d="M3250 730V760 M3370 730V760 M3250 740H3370" class="dim"/>
+  <text x="3310" y="720" class="t18 center">12m=0.4D</text>
+
+  <!-- pump shelters outside dikes -->
+  <rect x="2530" y="720" width="220" height="260" class="hazard"/><text x="2640" y="850" class="t20 bold center">汽油罐前<br/>泵棚/阀组</text>
+  <rect x="2530" y="1130" width="220" height="250" class="hazard"/><text x="2640" y="1255" class="t20 bold center">柴油罐前<br/>泵棚/阀组</text>
+  <text x="2640" y="1515" class="t18 center">均设于防火堤外</text>
+
+  <!-- drainage inside tank groups -->
+  <path d="M800 1440H2400V1410 M2890 1360H4160V1330" class="drain" marker-end="url(#flow)"/>
+  <circle cx="2400" cy="1410" r="22" fill="#fff" stroke="#0086b3" stroke-width="6"/><circle cx="4160" cy="1330" r="22" fill="#fff" stroke="#0086b3" stroke-width="6"/>
+  <text x="2130" y="1430" class="t18">罐区排水沟→受控排水口</text>
+
+  <!-- auxiliary production area -->
+  <rect x="520" y="1890" width="520" height="300" class="water"/><text x="780" y="2020" class="t24 bold center">消防水池</text><text x="780" y="2060" class="t18 center">容积待消防计算</text>
+  <rect x="1090" y="1890" width="300" height="300" class="building"/><text x="1240" y="2040" class="t22 bold center">消防泵房</text>
+  <rect x="1440" y="1890" width="260" height="300" class="building"/><text x="1570" y="2020" class="t21 bold center">泡沫站</text><text x="1570" y="2060" class="t18 center">泡沫液罐</text>
+  <rect x="1780" y="1890" width="310" height="300" class="building"/><text x="1935" y="2020" class="t21 bold center">变配电间</text><text x="1935" y="2060" class="t18 center">（非爆炸区）</text>
+  <rect x="2160" y="1890" width="260" height="300" class="building"/><text x="2290" y="2040" class="t22 bold center">化验室</text>
+  <rect x="2490" y="1890" width="260" height="300" class="building"/><text x="2620" y="2040" class="t22 bold center">机修间</text>
+  <rect x="2820" y="1890" width="300" height="300" class="building"/><text x="2970" y="2040" class="t22 bold center">备品仓库</text>
+  <rect x="3190" y="1890" width="360" height="300" class="hazard"/><text x="3370" y="2020" class="t22 bold center">油气回收装置</text><text x="3370" y="2060" class="t18 center">非焚烧式</text>
+  <rect x="3630" y="1890" width="500" height="300" class="water"/><text x="3880" y="2020" class="t22 bold center">含油污水/事故应急池</text><text x="3880" y="2060" class="t18 center">低点布置，容积待核算</text>
+  <path d="M450 2260H4270" class="road"/><text x="2360" y="2260" class="t20 bold center">库内主干道 / 消防通道（总宽≥6m）</text>
+
+  <!-- loading area -->
+  <path d="M650 2520H2350V3080H650Z" class="road"/>
+  <path d="M650 2520H2350V3080H650Z" class="roadedge"/>
+  <path d="M760 3115V3275" class="road"/><text x="820" y="3195" class="t18">装车区独立出入口</text>
+  <rect x="620" y="2500" width="680" height="260" class="green"/><text x="960" y="2615" class="t22 bold center">罐车等候缓冲区</text><text x="960" y="2655" class="t18 center">分车道排队/安全核验</text>
+  <rect x="1400" y="2520" width="840" height="300" class="hazard"/><text x="1820" y="2555" class="t22 bold center">公路密闭底部装车棚（通过式，净空≥5m）</text>
+  <g class="small center">
+    <rect x="1450" y="2600" width="150" height="160" fill="#fff" stroke="#111" stroke-width="5"/><text x="1525" y="2680">鹤位1<br/>92#</text>
+    <rect x="1640" y="2600" width="150" height="160" fill="#fff" stroke="#111" stroke-width="5"/><text x="1715" y="2680">鹤位2<br/>92#</text>
+    <rect x="1830" y="2600" width="150" height="160" fill="#fff" stroke="#111" stroke-width="5"/><text x="1905" y="2680">鹤位3<br/>95#</text>
+    <rect x="2020" y="2600" width="150" height="160" fill="#fff" stroke="#111" stroke-width="5"/><text x="2095" y="2680">鹤位4<br/>0#</text>
+  </g>
+  <rect x="1400" y="2880" width="300" height="180" class="building"/><text x="1550" y="2970" class="t20 bold center">定量装车<br/>控制小屋</text>
+  <rect x="1760" y="2880" width="300" height="180" class="hazard"/><text x="1910" y="2970" class="t20 bold center">装车泵房</text>
+  <text x="1140" y="2870" class="t20 center">回车场（满足罐车回转）</text>
+  <text x="1410" y="3170" class="t18 center">注：4个鹤位为方案布置，最终数量由装车能力计算确定</text>
+
+  <!-- administration area -->
+  <rect x="2750" y="2490" width="600" height="330" class="building"/><text x="3050" y="2625" class="t26 bold center">综合办公楼</text><text x="3050" y="2670" class="t20 center">含中控控制室</text>
+  <rect x="3420" y="2490" width="400" height="330" class="building"/><text x="3620" y="2655" class="t24 bold center">宿舍</text>
+  <rect x="3880" y="2490" width="360" height="330" class="building"/><text x="4060" y="2655" class="t24 bold center">食堂</text>
+  <rect x="2750" y="2890" width="520" height="210" class="building"/><text x="3010" y="2995" class="t22 bold center">行政车辆车库</text>
+  <rect x="3940" y="3000" width="220" height="170" class="building"/><text x="4050" y="3085" class="t20 bold center">门卫</text>
+  <path d="M3740 3130H3880 M4230 3130H4380" class="wall"/>
+  <path d="M3880 3130H4230" stroke="#fff" stroke-width="24"/><path d="M3900 3130V3280 M4210 3130V3280" class="med"/>
+  <text x="4055" y="3220" class="t22 bold center">主大门</text>
+  <path d="M2780 3130H3650" class="road"/><text x="3230" y="3130" class="t19 bold center">行政区道路</text>
+  <rect x="3420" y="2880" width="380" height="210" class="green"/><text x="3610" y="2985" class="t20 center">人员集散/停车</text>
+
+  <!-- municipal road outside wall -->
+  <rect x="300" y="3330" width="4200" height="130" fill="#dadada" stroke="#111" stroke-width="6"/>
+  <line x1="330" y1="3395" x2="4470" y2="3395" stroke="#fff" stroke-width="7" stroke-dasharray="70 40"/>
+  <text x="2400" y="3400" class="t26 bold center">外部市政道路（具体道路名称及接驳点待选址测绘确认）</text>
+
+  <!-- pipe corridors -->
+  <path d="M520 300V420H620V1680H3200V1880" class="oil" marker-end="url(#flow)"/>
+  <text x="640" y="520" class="t20 bold" fill="#d97706">上游进库输油管道</text>
+  <path d="M4380 300V430H4240V1680H2800" class="product" marker-end="url(#flow)"/>
+  <text x="4050" y="520" class="t20 bold" fill="#7c3aed" text-anchor="end">管输出库主管</text>
+  <path d="M600 1650H4250V2300H2400V2450" class="fire"/>
+  <text x="870" y="1690" class="t19 bold" fill="#1565c0">环状消防给水干管（示意）</text>
+  <path d="M2700 1680V2460H2190" class="oil" marker-end="url(#flow)"/>
+  <text x="2730" y="2210" class="t19" fill="#d97706">公路发油主管</text>
+
+  <!-- elevation/drainage control markers -->
+  <g class="t18">
+    <text x="4100" y="1570">▽H1 储油区设计地坪</text>
+    <text x="4100" y="2310">▽H2 辅助区设计地坪</text>
+    <text x="2230" y="2445">▽H3 装卸区设计地坪</text>
+    <text x="4210" y="2445">▽H4 行政区设计地坪</text>
+  </g>
+  <path d="M2350 1710L3800 1870" class="drain" marker-end="url(#flow)"/>
+  <text x="3020" y="1760" class="t18" fill="#0086b3">场地排水坡向→事故应急池（坡度待竖向计算）</text>
+
+  <!-- north arrow and wind -->
+  <g transform="translate(4680 380)">
+    <text x="120" y="0" class="t30 bold center">N</text>
+    <path d="M120 30L75 180L120 145L165 180Z" fill="#111"/><line x1="120" y1="145" x2="120" y2="235" class="med"/>
+    <text x="120" y="270" class="t22 center">指北针</text>
+    <path d="M260 40V225" stroke="#2e7d32" stroke-width="16" marker-end="url(#flow)"/>
+    <text x="280" y="125" class="t20" fill="#2e7d32">全年主导北风</text>
+  </g>
+
+  <!-- right-side notes and legend -->
+  <rect x="4620" y="700" width="1160" height="1430" class="med"/>
+  <text x="5200" y="750" class="t30 bold center">总图控制说明</text>
+  <text x="4670" y="810" class="note">
+    <tspan x="4670" dy="0">1. 本图按GB 50074—2014分为储油区、</tspan>
+    <tspan x="4670" dy="38">装卸区、辅助生产区和行政管理区。</tspan>
+    <tspan x="4670" dy="48">2. 0号柴油按丙A类固定顶罐绘制，</tspan>
+    <tspan x="4670" dy="38">不是丙B类。</tspan>
+    <tspan x="4670" dy="48">3. 10000m³罐暂按D=30m、H=16.58m；</tspan>
+    <tspan x="4670" dy="38">同组罐壁净距12m（0.4D）。</tspan>
+    <tspan x="4670" dy="48">4. 防火堤至罐壁距离按≥0.5H控制，</tspan>
+    <tspan x="4670" dy="38">有效容积须经下一阶段单独核算。</tspan>
+    <tspan x="4670" dy="48">5. 消防车道总宽≥6m、路面≥4m、</tspan>
+    <tspan x="4670" dy="38">转弯半径≥12m、净空≥5m。</tspan>
+    <tspan x="4670" dy="48">6. 行政区南置为当前方案。GB 50074</tspan>
+    <tspan x="4670" dy="38">第5.1.12条要求其位于储罐区全年最小</tspan>
+    <tspan x="4670" dy="38">频率风向下风侧，须取得完整风玫瑰图</tspan>
+    <tspan x="4670" dy="38">后复核；“主导北风”不能代替该数据。</tspan>
+    <tspan x="4670" dy="48">7. 穗东邻近珠江水系，H1～H4及场地</tspan>
+    <tspan x="4670" dy="38">最低标高须依据地形测量、设计洪潮水位</tspan>
+    <tspan x="4670" dy="38">和GB 50074第5.3.1条确定。</tspan>
+  </text>
+
+  <rect x="4620" y="2170" width="1160" height="800" class="med"/>
+  <text x="5200" y="2220" class="t30 bold center">图例</text>
+  <line x1="4680" y1="2290" x2="4860" y2="2290" class="wall"/><text x="4910" y="2298" class="t22">实体围墙（≥2.5m）</text>
+  <line x1="4680" y1="2360" x2="4860" y2="2360" class="partition"/><text x="4910" y="2368" class="t22">分区围墙/隔离线</text>
+  <line x1="4680" y1="2430" x2="4860" y2="2430" class="road"/><text x="4910" y="2438" class="t22">道路/消防车道</text>
+  <line x1="4680" y1="2500" x2="4860" y2="2500" class="dike"/><text x="4910" y="2508" class="t22">防火堤/隔堤</text>
+  <line x1="4680" y1="2570" x2="4860" y2="2570" class="oil"/><text x="4910" y="2578" class="t22">进库/公路发油管</text>
+  <line x1="4680" y1="2640" x2="4860" y2="2640" class="product"/><text x="4910" y="2648" class="t22">管输出库主管</text>
+  <line x1="4680" y1="2710" x2="4860" y2="2710" class="fire"/><text x="4910" y="2718" class="t22">消防给水管网</text>
+  <line x1="4680" y1="2780" x2="4860" y2="2780" class="drain"/><text x="4910" y="2788" class="t22">排水沟/坡向</text>
+  <circle cx="4770" cy="2860" r="65" fill="#fff" stroke="#111" stroke-width="7"/><text x="4910" y="2868" class="t22">立式储罐</text>
+
+  <rect x="4620" y="3010" width="1160" height="420" class="med"/>
+  <text x="5200" y="3060" class="t28 bold center">方案用地指标</text>
+  <text x="4680" y="3120" class="t22">围墙内方案范围：420m×300m</text>
+  <text x="4680" y="3160" class="t22">方案占地面积：126000m²（12.60ha）</text>
+  <text x="4680" y="3200" class="t22">储罐：8座×10000m³；总公称容量80000m³</text>
+  <text x="4680" y="3240" class="t22">油库等级：二级；年周转量：67×10⁴t/a</text>
+  <text x="4680" y="3280" class="t22">注：用地边界为毕业设计方案假定，非实测红线。</text>
+  <text x="4680" y="3320" class="t22">建筑面积、道路率、绿地率待建筑单体确定后统计。</text>
+
+  <!-- bottom notes and title block -->
+  <rect x="300" y="3510" width="4200" height="520" class="med"/>
+  <text x="350" y="3560" class="t26 bold">设计依据与限制条件</text>
+  <text x="350" y="3610" class="t22">
+    <tspan x="350" dy="0">① GB 50074—2014《石油库设计规范》第5.1、5.2、5.3、6.1、6.5、8.2节；GB/T 50103—2010《总图制图标准》；</tspan>
+    <tspan x="350" dy="38">　 SY/T 0003—2021《石油天然气工程制图规范》。汽油采用密闭底部装车并配套油气回收。</tspan>
+    <tspan x="350" dy="46">② 建设地点：广州市黄埔区穗东街道附近；年均温22.6℃，年降雨量2240mm，最大日降雨量346mm，</tspan>
+    <tspan x="350" dy="38">　 主导风向偏北、年平均风速2.0m/s、最大风速32.8m/s。排水、防洪防潮及抗风设计须专项校核。</tspan>
+    <tspan x="350" dy="46">③ 本图用于毕业设计总体方案与论文插图。因缺少正式用地红线、1∶500地形图、地勘、洪潮水位、全年风玫瑰图及市政接口资料，</tspan>
+    <tspan x="350" dy="38">　 不得直接作为施工图或报批总图；实际工程须由具备相应资质的设计单位复核全部防火间距、标高和构筑物尺寸。</tspan>
+  </text>
+
+  <rect x="4620" y="3510" width="1160" height="520" class="med"/>
+  <line x1="4620" y1="3700" x2="5780" y2="3700" class="med"/><line x1="4620" y1="3850" x2="5780" y2="3850" class="med"/>
+  <line x1="5000" y1="3510" x2="5000" y2="4030" class="med"/><line x1="5400" y1="3700" x2="5400" y2="4030" class="med"/>
+  <text x="4810" y="3605" class="t24 bold center">项目名称</text><text x="5390" y="3605" class="t22 center">广州黄埔穗东成品油库工艺设计</text>
+  <text x="4810" y="3775" class="t24 bold center">图名</text><text x="5200" y="3760" class="t22 center">总平面分区布置图</text><text x="5590" y="3760" class="t22 center">图号 ZT-01</text>
+  <text x="4810" y="3940" class="t22 center">阶段：毕业设计</text><text x="5200" y="3940" class="t22 center">比例：1∶1000</text><text x="5590" y="3940" class="t22 center">日期：2026-07</text>
+</svg>
